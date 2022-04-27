@@ -9,7 +9,6 @@ class Output{
       cout << " Nilai Minimum yang diproleh = " <<min<<endl;
       cout << " Nilai rata-rata yang ditetapkan = " <<rata_rata << endl;
     }
-
     void getData(){
       ambil_data.open("apidata.txt");
       bool dsn = true;
@@ -39,6 +38,7 @@ class Output{
       }
       ambil_data.close();
     }
+    
   private:
     ifstream ambil_data;
     string dosen, matkul;
